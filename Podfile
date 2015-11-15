@@ -1,0 +1,2 @@
+workspace 'CapTag'
+pod 'Parse'

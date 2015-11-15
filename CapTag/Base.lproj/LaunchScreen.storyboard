@@ -1,27 +1,116 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="QJg-Ww-COn">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="UPw-UT-iD6">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController id="QJg-Ww-COn" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="dwU-Vs-tMt"/>
+                        <viewControllerLayoutGuide type="bottom" id="2f2-23-wan"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="vfQ-AJ-PEp">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial_bg" translatesAutoresizingMaskIntoConstraints="NO" id="dS6-1L-blW">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="captag-logo-red" translatesAutoresizingMaskIntoConstraints="NO" id="r0z-dj-4bC">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dS6-1L-blW" secondAttribute="trailing" id="2Cv-3w-1BT"/>
+                            <constraint firstItem="r0z-dj-4bC" firstAttribute="centerY" secondItem="vfQ-AJ-PEp" secondAttribute="centerY" id="BYi-aO-YGf"/>
+                            <constraint firstItem="2f2-23-wan" firstAttribute="top" secondItem="dS6-1L-blW" secondAttribute="bottom" id="CnB-YY-fVT"/>
+                            <constraint firstItem="r0z-dj-4bC" firstAttribute="centerX" secondItem="dS6-1L-blW" secondAttribute="centerX" id="H73-FX-YJd"/>
+                            <constraint firstItem="dS6-1L-blW" firstAttribute="bottom" secondItem="2f2-23-wan" secondAttribute="top" id="PQU-H3-Gg7"/>
+                            <constraint firstItem="dS6-1L-blW" firstAttribute="leading" secondItem="vfQ-AJ-PEp" secondAttribute="leading" id="Pl8-yF-ULf"/>
+                            <constraint firstItem="r0z-dj-4bC" firstAttribute="centerY" secondItem="dS6-1L-blW" secondAttribute="centerY" id="Rjw-2A-7U4"/>
+                            <constraint firstItem="r0z-dj-4bC" firstAttribute="centerY" secondItem="vfQ-AJ-PEp" secondAttribute="centerY" id="ThD-x1-sgI"/>
+                            <constraint firstItem="r0z-dj-4bC" firstAttribute="top" secondItem="dwU-Vs-tMt" secondAttribute="bottom" constant="299" id="Ue0-fP-MOs"/>
+                            <constraint firstItem="r0z-dj-4bC" firstAttribute="centerX" secondItem="vfQ-AJ-PEp" secondAttribute="centerX" id="XQP-mw-BRo"/>
+                            <constraint firstItem="dS6-1L-blW" firstAttribute="trailing" secondItem="vfQ-AJ-PEp" secondAttribute="trailingMargin" constant="-20" id="Zni-hT-5B7">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="dS6-1L-blW" firstAttribute="leading" secondItem="vfQ-AJ-PEp" secondAttribute="leadingMargin" constant="-20" id="eAp-as-2aY"/>
+                            <constraint firstItem="dS6-1L-blW" firstAttribute="leading" secondItem="vfQ-AJ-PEp" secondAttribute="leadingMargin" id="gH0-Zk-TNm"/>
+                            <constraint firstItem="dS6-1L-blW" firstAttribute="top" secondItem="vfQ-AJ-PEp" secondAttribute="topMargin" id="kIV-LV-5KH"/>
+                            <constraint firstItem="r0z-dj-4bC" firstAttribute="centerX" secondItem="vfQ-AJ-PEp" secondAttribute="centerX" id="nJh-q9-UsK"/>
+                            <constraint firstItem="r0z-dj-4bC" firstAttribute="leading" secondItem="vfQ-AJ-PEp" secondAttribute="leadingMargin" constant="3" id="qKx-Cx-w3s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r0z-dj-4bC" secondAttribute="trailing" constant="5" id="rmj-1X-o1Z"/>
+                            <constraint firstItem="r0z-dj-4bC" firstAttribute="leading" secondItem="vfQ-AJ-PEp" secondAttribute="leadingMargin" constant="5" id="v76-zo-OmL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dS6-1L-blW"/>
+                                <exclude reference="r0z-dj-4bC"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2Cv-3w-1BT"/>
+                                <exclude reference="PQU-H3-Gg7"/>
+                                <exclude reference="Pl8-yF-ULf"/>
+                                <exclude reference="Zni-hT-5B7"/>
+                                <exclude reference="eAp-as-2aY"/>
+                                <exclude reference="gH0-Zk-TNm"/>
+                                <exclude reference="kIV-LV-5KH"/>
+                                <exclude reference="BYi-aO-YGf"/>
+                                <exclude reference="H73-FX-YJd"/>
+                                <exclude reference="Rjw-2A-7U4"/>
+                                <exclude reference="ThD-x1-sgI"/>
+                                <exclude reference="Ue0-fP-MOs"/>
+                                <exclude reference="XQP-mw-BRo"/>
+                                <exclude reference="nJh-q9-UsK"/>
+                                <exclude reference="qKx-Cx-w3s"/>
+                                <exclude reference="rmj-1X-o1Z"/>
+                                <exclude reference="v76-zo-OmL"/>
+                                <exclude reference="CnB-YY-fVT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="dS6-1L-blW"/>
+                                <include reference="r0z-dj-4bC"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2Cv-3w-1BT"/>
+                                <exclude reference="PQU-H3-Gg7"/>
+                                <exclude reference="Pl8-yF-ULf"/>
+                                <include reference="Zni-hT-5B7"/>
+                                <include reference="eAp-as-2aY"/>
+                                <exclude reference="gH0-Zk-TNm"/>
+                                <include reference="kIV-LV-5KH"/>
+                                <exclude reference="BYi-aO-YGf"/>
+                                <exclude reference="H73-FX-YJd"/>
+                                <exclude reference="Rjw-2A-7U4"/>
+                                <include reference="ThD-x1-sgI"/>
+                                <exclude reference="Ue0-fP-MOs"/>
+                                <exclude reference="XQP-mw-BRo"/>
+                                <include reference="nJh-q9-UsK"/>
+                                <exclude reference="qKx-Cx-w3s"/>
+                                <include reference="rmj-1X-o1Z"/>
+                                <include reference="v76-zo-OmL"/>
+                                <include reference="CnB-YY-fVT"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbt-XM-Aav" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="81" y="513"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="captag-logo-red" width="706" height="324"/>
+        <image name="tutorial_bg" width="3840" height="2160"/>
+    </resources>
 </document>
