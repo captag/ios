@@ -12,10 +12,10 @@ import UIKit
 extension UIViewController {
     
     func textFieldDidBeginEditing(textField: UITextField) {
-        animateViewMoving(true, moveValue: 150)
+        animateViewMoving(true, moveValue: 170)
     }
     func textFieldDidEndEditing(textField: UITextField) {
-        animateViewMoving(false, moveValue: 150)
+        animateViewMoving(false, moveValue: 170)
     }
     
     func animateViewMoving (up:Bool, moveValue :CGFloat){
@@ -27,6 +27,7 @@ extension UIViewController {
         self.view.frame = CGRectOffset(self.view.frame, 0,  movement)
         UIView.commitAnimations()
     }
+    
   func showErrorView(error: NSError) {
     if let errorMessage = error.userInfo["error"] as? String {
       let alert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: UIAlertControllerStyle.Alert)
@@ -34,4 +35,5 @@ extension UIViewController {
       presentViewController(alert, animated: true, completion: nil)
     }
   }
+    
 }
