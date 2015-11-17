@@ -10,7 +10,11 @@
 #define CapTag_Bridging_Header_h
 
 #import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
 #import <Bolts/Bolts.h>
+#import <ChameleonFramework/Chameleon.h>
+
 #import "SWRevealViewController.h"
+
 
 #endif /* CapTag_Bridging_Header_h */

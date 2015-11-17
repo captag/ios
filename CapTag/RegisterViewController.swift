@@ -37,7 +37,7 @@ class RegisterViewController: UIViewController {
         user.signUpInBackgroundWithBlock { succeeded, error in
             if (succeeded) {
                 //The registration was successful, go to the wall
-                let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("StartViewController") as! StartViewController
+                let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("GamesViewController") as! GamesViewController
                 self.presentViewController(secondViewController, animated: true, completion: nil)
             } else if let error = error {
                 //Something bad has occurred
