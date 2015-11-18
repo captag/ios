@@ -13,6 +13,7 @@
 #import <ParseUI/ParseUI.h>
 #import <Bolts/Bolts.h>
 #import <ChameleonFramework/Chameleon.h>
+#import <Mapbox/Mapbox.h>
 
 #import "SWRevealViewController.h"
 

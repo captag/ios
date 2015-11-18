@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import Parse
 
 class Game: PFObject {
+    
     @NSManaged var icon: String?
     @NSManaged var gameTemplate: PFRelation
     @NSManaged var name: String?
@@ -32,7 +34,6 @@ extension Game: PFSubclassing {
     class func parseClassName() -> String {
         return "Game"
     }
-    
     //2
     override class func initialize() {
         var onceToken: dispatch_once_t = 0

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Parse
+import ParseUI
 
 class GamesViewController: PFQueryTableViewController {
     
@@ -21,6 +23,9 @@ class GamesViewController: PFQueryTableViewController {
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+        self.navigationController!.navigationBar.barStyle = UIBarStyle.Black
+        self.navigationController!.navigationBar.tintColor = UIColor(hexString: "#ff0000ff")
         
         loadObjects()
     }
@@ -58,6 +63,15 @@ class GamesViewController: PFQueryTableViewController {
             iconView.downloadedFrom(link: game.icon!, contentMode: UIViewContentMode.ScaleAspectFit)
         }
         return cell
+    }
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using [segue destinationViewController].
+        let detailScene = segue.destinationViewController as! GameDetailsViewController
+        // Pass the selected object to the destination view controller.
+        let indexPath = self.tableView.indexPathForSelectedRow
+        detailScene.currentGame = (objects![indexPath!.row] as! Game)
     }
 }
 
