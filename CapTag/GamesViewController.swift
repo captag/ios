@@ -71,7 +71,7 @@ class GamesViewController: PFQueryTableViewController {
         let detailScene = segue.destinationViewController as! GameDetailsViewController
         // Pass the selected object to the destination view controller.
         let indexPath = self.tableView.indexPathForSelectedRow
-        detailScene.currentGame = (objects![indexPath!.row] as! Game)
+        detailScene.currentGame = (self.objects![indexPath!.row] as! Game)
     }
 }
 
